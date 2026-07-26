@@ -1,0 +1,181 @@
+{
+    "refund": {
+        "patterns": [
+            "refund",
+            "return",
+            "money back",
+            "refund policy",
+            "i need a refund",
+            "i want a refund",
+            "can i get a refund",
+            "tell me about refunds"
+        ],
+        "response": "Sure! What would you like to know about refunds?",
+        "follow_up": {
+            "time": {
+                "patterns": [
+                    "how many days will it take for refund",
+                    "when will i get my refund",
+                    "how long does refund take",
+                    "refund timeline",
+                    "refund processing time",
+                    "when",
+                    "when?",
+                    "how long",
+                    "how many days",
+                    "days",
+                    "timeline",
+                    "refund time",
+                    "when will i get it",
+                    "when will i receive it"
+                ],
+                "response": "Refunds are processed within 5–7 business days."
+            },
+            "process": {
+                "patterns": [
+                    "how",
+                    "process",
+                    "steps",
+                    "procedure"
+                ],
+                "response": "To request a refund, log in to your account, open your order and click Request Refund."
+            },
+            "eligibility": {
+                "patterns": [
+                    "eligible",
+                    "damaged",
+                    "return this"
+                ],
+                "response": "Products can be returned within 30 days if unused."
+            }
+        }
+    },
+    "shipping": {
+        "patterns": [
+            "shipping",
+            "delivery",
+            "order delivery"
+        ],
+        "response": "Sure! What would you like to know about shipping?",
+        "follow_up": {
+            "time": {
+                "patterns": [
+                    "how long does shipping take",
+                    "when will my order arrive",
+                    "delivery time",
+                    "shipping time",
+                    "when",
+                    "days",
+                    "how long"
+                ],
+                "response": "Orders are delivered within 3–5 business days."
+            },
+            "tracking": {
+                "patterns": [
+                    "track",
+                    "tracking",
+                    "where is my order"
+                ],
+                "response": "You can track your order from My Orders."
+            },
+            "process": {
+                "patterns": [
+                    "process",
+                    "shipping process",
+                    "delivery process",
+                    "how does shipping work",
+                    "how do you ship",
+                    "procedure",
+                    "steps"
+                ],
+                "response": "After your order is confirmed, we pack it, ship it, and send tracking details from My Orders."
+            }
+        }
+    },
+    "hours": {
+        "patterns": [
+            "hours",
+            "opening hours",
+            "business hours"
+        ],
+        "response": "We are open from 9 AM to 6 PM.",
+        "follow_up": {
+            "full": {
+                "patterns": [
+                    "what are the hours",
+                    "business hours",
+                    "working hours",
+                    "what time are you open",
+                    "what are your timings",
+                    "store timings"
+                ],
+                "response": "We are open from 9 AM to 6 PM."
+            },
+            "opening": {
+                "patterns": [
+                    "when",
+                    "opening",
+                    "open"
+                ],
+                "response": "We open at 9 AM."
+            },
+            "closing": {
+                "patterns": [
+                    "close",
+                    "closing"
+                ],
+                "response": "We close at 6 PM."
+            }
+        }
+    },
+    "contact": {
+        "patterns": [
+            "contact",
+            "support",
+            "customer service"
+        ],
+        "response": "Sure! What contact information do you need?",
+        "follow_up": {
+            "general": {
+                "patterns": [
+                    "how to connect you",
+                    "how can i contact you",
+                    "contact information",
+                    "contact details",
+                    "customer service contact"
+                ],
+                "response": "You can email us at support@company.com or call +1-234-567-8900."
+            },
+            "email": {
+                "patterns": [
+                    "email",
+                    "mail"
+                ],
+                "response": "support@company.com"
+            },
+            "phone": {
+                "patterns": [
+                    "phone",
+                    "call",
+                    "number"
+                ],
+                "response": "+1-234-567-8900"
+            }
+        }
+    },
+    "greeting": {
+        "patterns": [
+            "hi",
+            "hello",
+            "hey"
+        ],
+        "response": "Hello! How can I help you today?"
+    },
+    "goodbye": {
+        "patterns": [
+            "bye",
+            "goodbye"
+        ],
+        "response": "Goodbye! Have a wonderful day!"
+    }
+}
