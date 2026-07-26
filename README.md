@@ -20,13 +20,12 @@ A simple context-aware customer support chatbot built with **Python** and **Stre
 
 ## 📂 Project Structure
 
+```text
 customer-support-chatbot/
-│
-├── app.py              # Streamlit user interface
-├── chatbot.py          # Chatbot logic and intent handling
-├── intents.json        # Questions, responses, and follow-ups
-├── requirements.txt    # Project dependencies
-└── README.md           # Project documentation
-
-
+├── app.py
+├── chatbot.py
+├── intents.json
+├── requirements.txt
+└── README.md
+```
 
