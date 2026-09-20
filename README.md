@@ -1,31 +1,39 @@
-# Customer Support Chatbot 🤖
+# 💬 Customer Support Chatbot
 
-A simple context-aware customer support chatbot built with **Python** and **Streamlit**. It answers common customer queries related to refunds, shipping, business hours, and contact information while supporting follow-up questions.
+A lightweight, context-aware customer support chatbot built with Python and Streamlit using rule-based intent detection and a structured JSON knowledge base.
 
-## Features
+## 🚀 Features
 
-* Context-aware conversations
-* Intent detection
-* Follow-up question handling
-* JSON-based knowledge base
-* Streamlit chat interface
+* 💬 Handle customer queries about refunds, shipping, business hours, and contact information
+* 🧠 Detect user intent using predefined keywords and patterns
+* 🔄 Handle multi-turn follow-up questions using conversation context
+* 📚 Store intents, patterns, and responses in a structured JSON knowledge base
+* 🖥️ Interactive chat interface using Streamlit
 
-## Technologies
+## 🛠️ Technologies Used
 
 * Python
 * Streamlit
+* Rule-Based NLP
 * JSON
 
-## Project Structure
-
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
 customer-support-chatbot/
+│
 ├── app.py
 ├── chatbot.py
 ├── intents.json
+├── README.md
 ├── requirements.txt
-└── README.md
+└── .gitignore
 ```
 
+## 📁 Future Enhancements
+
+* 🔎 Replace keyword-based intent detection with semantic similarity using sentence embeddings.
+* 🧠 Improve context handling for more complex multi-turn conversations.
+* 🤖 Add an LLM-based response layer for more flexible natural-language responses.
+* 🧪 Add automated tests for intent detection and conversation flows.
+* ☁️ Deploy the chatbot as a publicly accessible Streamlit application.

@@ -1,7 +1,6 @@
 import json
 import string
 
-
 # Load all chatbot topics, example phrases, follow-up phrases, and replies
 # from intents.json so the answers can be edited without changing app.py.
 with open("intents.json", "r") as file:
@@ -71,16 +70,19 @@ def detect_follow_up(intent, text):
     # "how do I request a refund?"
     if intent == "refund":
         # Refund timing questions.
-        if has_any(text, [
-            "how many day",
-            "how long",
-            "when",
-            "timeline",
-            "processing time",
-            "refund time",
-            "receive it",
-            "get it",
-        ]):
+        if has_any(
+            text,
+            [
+                "how many day",
+                "how long",
+                "when",
+                "timeline",
+                "processing time",
+                "refund time",
+                "receive it",
+                "get it",
+            ],
+        ):
             return intents["refund"]["follow_up"]["time"]["response"]
 
         # Refund process questions.
@@ -97,39 +99,48 @@ def detect_follow_up(intent, text):
             return intents["shipping"]["follow_up"]["tracking"]["response"]
 
         # Shipping process questions.
-        if has_any(text, [
-            "process",
-            "shipping process",
-            "delivery process",
-            "how does shipping work",
-            "how do you ship",
-            "procedure",
-            "steps",
-        ]):
+        if has_any(
+            text,
+            [
+                "process",
+                "shipping process",
+                "delivery process",
+                "how does shipping work",
+                "how do you ship",
+                "procedure",
+                "steps",
+            ],
+        ):
             return intents["shipping"]["follow_up"]["process"]["response"]
 
         # Shipping delivery-time questions.
-        if has_any(text, [
-            "how long",
-            "when",
-            "arrive",
-            "delivery time",
-            "shipping time",
-            "how many day",
-            "days",
-        ]):
+        if has_any(
+            text,
+            [
+                "how long",
+                "when",
+                "arrive",
+                "delivery time",
+                "shipping time",
+                "how many day",
+                "days",
+            ],
+        ):
             return intents["shipping"]["follow_up"]["time"]["response"]
 
     if intent == "hours":
         # Full business-hours questions.
-        if has_any(text, [
-            "what are the hours",
-            "business hours",
-            "working hours",
-            "timings",
-            "store timings",
-            "what time are you open",
-        ]):
+        if has_any(
+            text,
+            [
+                "what are the hours",
+                "business hours",
+                "working hours",
+                "timings",
+                "store timings",
+                "what time are you open",
+            ],
+        ):
             return intents["hours"]["follow_up"]["full"]["response"]
 
         # Closing-time questions.
@@ -142,13 +153,16 @@ def detect_follow_up(intent, text):
 
     if intent == "contact":
         # General contact questions where the user wants all contact options.
-        if has_any(text, [
-            "how to connect you",
-            "how can i contact you",
-            "contact information",
-            "contact details",
-            "customer service contact",
-        ]):
+        if has_any(
+            text,
+            [
+                "how to connect you",
+                "how can i contact you",
+                "contact information",
+                "contact details",
+                "customer service contact",
+            ],
+        ):
             return intents["contact"]["follow_up"]["general"]["response"]
 
         # Email-only contact questions.
